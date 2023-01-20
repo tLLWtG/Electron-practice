@@ -42,9 +42,12 @@ app.on("window-all-closed", function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
-// fix "[203649:0120/184258.228913:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed"
+// Bugs:
+// 1. fix "[203649:0120/184258.228913:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed"
 app.disableHardwareAcceleration();
-
-// TODO:
-// 1. fix "libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)"
 // 2. fix "[330839:0120/204202.471989:ERROR:ssl_client_socket_impl.cc(982)] handshake failed; returned -1, SSL error code 1, net_error -100"
+// solved after installing Electron Forge
+// didnt figure out why
+
+// TO Fix:
+// 1. fix "libva error: vaGetDriverNameByIndex() failed with unknown libva error, driver_name = (null)"
