@@ -1,0 +1,25 @@
+{
+  "name": "electron-practice",
+  "version": "1.0.0",
+  "description": "A practice.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tLLWtG/Electron-practice.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "tLLWtG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tLLWtG/Electron-practice/issues"
+  },
+  "homepage": "https://github.com/tLLWtG/Electron-practice#readme",
+  "devDependencies": {
+    "electron": "^22.0.2"
+  }
+}
