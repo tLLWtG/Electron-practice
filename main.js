@@ -2,6 +2,10 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 
+// run this as early in the main process as possible
+// to Handling startup events of electron-winstaller
+if (require("electron-squirrel-startup")) app.quit();
+
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
